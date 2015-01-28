@@ -1,14 +1,21 @@
+
+
 public class NewClass {
 
- int fakt(int a) {
-int b=1;
-  for (int i = 1; i <= a; i++) {
 
-   b *= i;
 
-  }
-  return b;
- }
+    int calculateFactorial(int value) {
+
+        int result = 1;
+
+            for (int count = 1; count <= value; count++) {
+
+                 result *= count;
+
+            }
+
+        return result;
+    }
 
 
 }
