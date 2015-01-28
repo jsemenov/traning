@@ -7,7 +7,8 @@ public class Deploy {
 
         NewClass newClass = new NewClass();
 
-         System.out.println("Lets begin!");
+         System.out.println("    " +
+                 "gin!");
 
          System.out.println(newClass.getA());
      }
