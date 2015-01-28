@@ -1,15 +1,19 @@
-/**
- * Created by user on 1/25/15.
- */
+import java.util.Scanner;
 public class Deploy {
+ public static void main(String args[]) {
 
-     public static void main(String args []){
 
-        NewClass newClass = new NewClass();
+  NewClass newClass = new NewClass();
+  Scanner sc = new Scanner(System.in);
 
-         System.out.println("    " +
-                 "gin!");
+  System.out.print("Пссс...\n" +
+                  "\n\tПарень!\n" +
+                  "\nдавай я вычислю тебе факториал!\n" +
+                                  "\n\t просто введи сюда число: ");
+  int x = sc.nextInt();
 
-         System.out.println(newClass.getA());
-     }
+  System.out.println("факториал числа "+x+" будет равен "+newClass.fakt(x));
+
+
+ }
 }

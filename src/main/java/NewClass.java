@@ -1,24 +1,14 @@
-/**
- * Created by user on 1/28/15.
- */
 public class NewClass {
 
-    private int a = 10;
-    private int b = 5;
+ int fakt(int a) {
+int b=1;
+  for (int i = 1; i <= a; i++) {
 
-    public int getB() {
-        return b;
-    }
+   b *= i;
 
-    public void setB(int b) {
-        this.b = b;
-    }
+  }
+  return b;
+ }
 
-    public int getA() {
-        return a;
-    }
 
-    public void setA(int a) {
-        this.a = a;
-    }
 }
