@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Deploy {
  public static void main(String args[]) {
 
@@ -14,7 +13,6 @@ public class Deploy {
   int x = sc.nextInt();
 
   System.out.println("факториал числа " + x + " будет равен " + newClass.fakt(x));
-
 
  }
 }
