@@ -3,6 +3,7 @@
  */
 public interface IAction {
 
-    public Integer squr();
+    public Integer squr(
+    );
 
 }
