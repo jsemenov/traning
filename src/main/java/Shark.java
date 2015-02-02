@@ -1,8 +1,5 @@
-/**
- * Created by user on 1/29/15.
- */
-public class Shark extends NewAnimal implements IAnimalAction {
 
+public class Shark extends NewAnimal implements IAnimalAction {
 
 
     public void swim(){
