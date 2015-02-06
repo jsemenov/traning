@@ -1,17 +1,14 @@
 package Kassa;
+public class Main{
+  public static void main(String args[])  {
 
-import java.io.IOException;
+      //  PrintOut print = new PrintOut();
 
-public class Main extends WriteIn{//implements Interface
-    public static void main(String args[]) throws IOException {
+      //  print.name();
 
-        PrintOut print = new PrintOut();
-        WriteIn write = new WriteIn();
 
-        print.name();
-
-        write.WriteIt();
-        write.WriteCheck();
+      //  print.WriteIt();
+     //   print.WriteCheck();
 
 
 
