@@ -19,13 +19,13 @@ public class Cats extends Animals {
     @Override
     public void voice() {
 
-        System.out.println("now i am a cat "+ name +" and says  - myau!");
+        System.out.println("now i am a cat " + name + " and says  - myau!");
 
     }
 
     @Override
     public void sleep() {
-        System.out.println("now i am a cat " + name +" and i go sleeps");
+        System.out.println("now i am a cat " + name + " and i go sleeps");
 
     }
 

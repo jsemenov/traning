@@ -1,3 +1,4 @@
+import Animals.Animals;
 import Animals.Cats;
 import Animals.Dogs;
 
@@ -5,6 +6,15 @@ public class Deploy {
 
 
     public static void main(String args[]) {
+
+
+        Animals someAnimal = new Cats("AnimalCat", 13);
+        Animals animals = new Dogs(" dogClass", 4);
+
+
+        System.out.println(animals.getClass());
+
+        System.out.println();
 
 
         Cats cat1 = new Cats("Barsik", 10);
