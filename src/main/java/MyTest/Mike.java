@@ -13,10 +13,16 @@ public class Mike extends Human implements Ido {
     }
 
     @Override
-    protected String surname (String surname){
-    return super.surname(surname);
+    protected String surname(String surname) {
+        return super.surname(surname);
     }
 
+
+    @Override
+    public void talck() {
+
+        System.out.println("Bla-bla-bla ))");
+    }
 
     @Override
     public boolean eat() {

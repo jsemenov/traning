@@ -1,6 +1,4 @@
 package MyTest;
-
-
 public abstract class Human implements Ido{
 
     protected int age;

@@ -1,5 +1,4 @@
-import Animals.Cats;
-import Animals.Dogs;
+import Vehicles.MountainBike;
 
 public class Deploy {
 
@@ -7,7 +6,7 @@ public class Deploy {
     public static void main(String args[]) {
 
 
-        Cats cat1 = new Cats("Barsik", 10);
+ /*       Cats cat1 = new Cats("Barsik", 10);
         Cats cat2 = new Cats("Valera", 2);
 
         Dogs dog1 = new Dogs("Chuk", 4);
@@ -31,9 +30,14 @@ public class Deploy {
         cat2.drinkMilk();
         cat2.move();
         System.out.println(cat2.toString());
+*/
+        MountainBike bicycle = new MountainBike("im Bicycle"," type is Mountain Bike","the surroundings Use is land");
 
 
-
+        System.out.println(bicycle.getTypeVehicle());
+        System.out.println(bicycle.getSurroundingsUse());
+                bicycle.can();
+        bicycle.krutiPedaliPokaNeDali();
 
     }
 }

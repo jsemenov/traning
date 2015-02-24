@@ -1,32 +1,27 @@
 package Animals;
-
-
-/**
- * Created by user on 2/9/15.
- */
 public class Cats extends Animals {
 
-
-
     public Cats(String nameAimal, Integer ageAnimal){
-
             name = nameAimal;
             age = ageAnimal;
-
     }
 
 
     @Override
+    public void fight() {
+        System.out.println("REX");
+    }
+
+
+
+    @Override
     public void voice() {
-
         System.out.println("now i am a cat "+ name +" and says  - myau!");
-
     }
 
     @Override
     public void sleep() {
         System.out.println("now i am a cat " + name +" and i go sleeps");
-
     }
 
     public Integer getAge() {

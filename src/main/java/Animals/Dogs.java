@@ -1,8 +1,4 @@
 package Animals;
-
-/**
- * Created by user on 2/9/15.
- */
 public class Dogs extends Animals{
 
 

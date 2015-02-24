@@ -19,6 +19,13 @@ public class JekaSemen extends Human implements Ido{
 
 
     @Override
+    public void talck() {
+
+        System.out.println("Bla-bla-bla ))");
+
+    }
+
+    @Override
     public boolean eat() {
         return false;
     }
