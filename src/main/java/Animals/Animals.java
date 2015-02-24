@@ -3,16 +3,36 @@ public abstract class Animals implements IAnimalAction {
 
     String name;
     Integer age;
+    private Integer damage;
+    private Integer health;
+    private Integer weight;
+    private Integer agility;
+    private Integer defense;
+    private Integer speedFight;
+    private Integer evasion;
 
     public void evidencePrint() {
+        speedFight = getAgility() * 10;
 
-        System.out.println("\nName "+name+"\n" +
-                        "Life-Points "+getHealth()*getWeight()+"\n" +
-                        "Damage "+getDamage()+"\n" +
-                        "Defense "+getDefense()+"\n" +
-                        "Evasion "+getAgility()+"%"
+        System.out.println("\nName " + name + "\n" +
+                        "Life-Points " + health * weight + "\n" +
+                        "Damage " + damage + "\n" +
+                        "Defense " + defense + "\n" +
+                        "Evasion " + agility + "%" + "\n" +
+                        "Agility " + agility + "\n" +
+                        "Speed of fighting " + speedFight
         );
         System.out.println();
+    }
+    public void setEvasion(Integer evasion) {
+        this.evasion = evasion;
+    }
+    public Integer getEvasion() {
+        return evasion;
+    }
+
+    public Integer getSpeedFight() {
+        return speedFight;
     }
 
     public Integer getDamage() {
@@ -56,13 +76,6 @@ public abstract class Animals implements IAnimalAction {
     }
 
 
-    private Integer damage;
-    private Integer health;
-    private Integer weight;
-    private Integer agility;
-    private Integer defense;
-
-
     @Override
     public void voice() {
 
@@ -85,7 +98,7 @@ public abstract class Animals implements IAnimalAction {
     }
 
     @Override
-         public void fight() {
+    public void fight() {
 
         System.out.println(" i want fight");
 

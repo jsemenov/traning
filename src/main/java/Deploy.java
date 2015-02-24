@@ -56,5 +56,9 @@ public class Deploy {
         catStrength.evidencePrint();
         catDodger.evidencePrint();
 
+        //catDodger.fight(catStrength);
+        catStrength.fight(catDodger);
+       // System.out.println(catStrength.getSpeedFight());
+
     }
 }

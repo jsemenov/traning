@@ -1,23 +1,26 @@
 package Animals;
 public class Cats extends Animals {
 
-    public Cats(String nameAimal, Integer ageAnimal){
-            name = nameAimal;
+    public Cats(String nameAnimal, Integer ageAnimal){
+            name = nameAnimal;
             age = ageAnimal;
     }
 
 
 
 
-    @Override
-    public void fight() {
 
+    public void fight(Cats rival) {
+        setEvasion(getAgility()/100);
+        int lastDamageCat1 = ((getSpeedFight()+getDamage())+getAgility()-rival.getDefense())*rival.getEvasion();
+        int lastDamageRival =((rival.getSpeedFight()+rival.getDamage())+rival.getAgility()-getDefense())*getEvasion();
+        int lastHealthCat1;
+        int lastHealthRival;
 
-        System.out.println(" i want fight");
+        System.out.println("Final damage "+getName()+ " is "+lastDamageCat1);
+        System.out.println("Final damage "+rival.getName()+ " is "+lastDamageRival);
 
     }
-
-
 
     @Override
     public void voice() {
