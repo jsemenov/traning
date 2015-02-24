@@ -7,9 +7,14 @@ public class Cats extends Animals {
     }
 
 
+
+
     @Override
     public void fight() {
-        System.out.println("REX");
+
+
+        System.out.println(" i want fight");
+
     }
 
 

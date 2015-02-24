@@ -1,17 +1,26 @@
 package Animals;
-
-public abstract class Animals implements IAnimalAction{
-
+public abstract class Animals implements IAnimalAction {
 
     String name;
     Integer age;
 
-    public Integer getStrength() {
-        return strength;
+    public void evidencePrint() {
+
+        System.out.println("\nName "+name+"\n" +
+                        "Life-Points "+getHealth()*getWeight()+"\n" +
+                        "Damage "+getDamage()+"\n" +
+                        "Defense "+getDefense()+"\n" +
+                        "Evasion "+getAgility()+"%"
+        );
+        System.out.println();
     }
 
-    public void setStrength(Integer strength) {
-        this.strength = strength;
+    public Integer getDamage() {
+        return damage;
+    }
+
+    public void setDamage(Integer damage) {
+        this.damage = damage;
     }
 
     public Integer getHealth() {
@@ -38,15 +47,26 @@ public abstract class Animals implements IAnimalAction{
         this.agility = agility;
     }
 
-    private Integer strength;
-   private Integer health;
-   private Integer weight;
-   private Integer agility;
+    public Integer getDefense() {
+        return defense;
+    }
+
+    public void setDefense(Integer defense) {
+        this.defense = defense;
+    }
+
+
+    private Integer damage;
+    private Integer health;
+    private Integer weight;
+    private Integer agility;
+    private Integer defense;
+
 
     @Override
     public void voice() {
 
-        System.out.println( " i don't know who am I");
+        System.out.println(" i don't know who am I");
 
     }
 
@@ -63,10 +83,11 @@ public abstract class Animals implements IAnimalAction{
         System.out.println("some animal sleep");
 
     }
-    @Override
-    public void fight() {
 
-        System.out.println("now i  cant fight");
+    @Override
+         public void fight() {
+
+        System.out.println(" i want fight");
 
     }
 
