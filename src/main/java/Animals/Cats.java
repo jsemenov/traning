@@ -5,23 +5,26 @@ public class Cats extends Animals {
             name = nameAnimal;
             age = ageAnimal;
     }
+   public void fight(Cats rival) {
+
+        int lastDamageCat1 = ((getSpeedFight()+getDamage())+getAgility()-rival.getDefense());
+        int lastDamageRival =((rival.getSpeedFight()+rival.getDamage())+rival.getAgility()-getDefense());
+        System.out.println("Final damage "+name+ " is "+lastDamageCat1);
+        System.out.println("Final damage "+rival.name+ " is "+lastDamageRival);
+
+       int lastHealthCat1= (getHealth() * getWeight())-lastDamageRival;
+       int lastHealthRival= (rival.getHealth() * rival.getWeight())-lastDamageCat1;
 
 
-
-
-
-    public void fight(Cats rival) {
-        setEvasion(getAgility()/100);
-        int lastDamageCat1 = ((getSpeedFight()+getDamage())+getAgility()-rival.getDefense())*rival.getEvasion();
-        int lastDamageRival =((rival.getSpeedFight()+rival.getDamage())+rival.getAgility()-getDefense())*getEvasion();
-        int lastHealthCat1;
-        int lastHealthRival;
-
-        System.out.println("Final damage "+getName()+ " is "+lastDamageCat1);
-        System.out.println("Final damage "+rival.getName()+ " is "+lastDamageRival);
+       if (lastHealthCat1>lastHealthRival){
+           System.out.println("\n" +name+ " is WINNER"+"\n" +
+                   "his Life-Point is " + lastHealthCat1);
+       } else {
+           System.out.println("\n" +rival.name+ " is WINNER"+"\n" +
+                   "his Life-Point is " + lastHealthRival);
+       }
 
     }
-
     @Override
     public void voice() {
         System.out.println("now i am a cat "+ name +" and says  - myau!");

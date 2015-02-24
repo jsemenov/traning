@@ -40,25 +40,24 @@ public class Deploy {
 
         Cats catStrength = new Cats("Pudge", 5);
 
-        catStrength.setHealth(1000);
+        catStrength.setHealth(100);
         catStrength.setDamage(250);
         catStrength.setWeight(6);
         catStrength.setDefense(25);
         catStrength.setAgility(10);
 
       Cats catDodger = new Cats("Blood Seeker", 4);
-        catDodger.setHealth(1000);
+        catDodger.setHealth(100);
         catDodger.setDamage(170);
-        catDodger.setWeight(3);
+        catDodger.setWeight(4);
         catDodger.setDefense(15);
         catDodger.setAgility(50);
 
         catStrength.evidencePrint();
         catDodger.evidencePrint();
 
-        //catDodger.fight(catStrength);
         catStrength.fight(catDodger);
-       // System.out.println(catStrength.getSpeedFight());
+
 
     }
 }

@@ -9,7 +9,6 @@ public abstract class Animals implements IAnimalAction {
     private Integer agility;
     private Integer defense;
     private Integer speedFight;
-    private Integer evasion;
 
     public void evidencePrint() {
         speedFight = getAgility() * 10;
@@ -24,12 +23,8 @@ public abstract class Animals implements IAnimalAction {
         );
         System.out.println();
     }
-    public void setEvasion(Integer evasion) {
-        this.evasion = evasion;
-    }
-    public Integer getEvasion() {
-        return evasion;
-    }
+
+
 
     public Integer getSpeedFight() {
         return speedFight;
