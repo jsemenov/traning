@@ -18,10 +18,10 @@ public class Cats extends Animals {
 
        if (lastHealthCat1>lastHealthRival){
            System.out.println("\n" +name+ " is WINNER"+"\n" +
-                   "his Life-Point is " + lastHealthCat1);
+                   "lees of life after fighting " + lastHealthCat1);
        } else {
            System.out.println("\n" +rival.name+ " is WINNER"+"\n" +
-                   "his Life-Point is " + lastHealthRival);
+                   "lees of life after fighting " + lastHealthRival);
        }
 
     }
